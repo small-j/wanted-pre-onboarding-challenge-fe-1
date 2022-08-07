@@ -1,17 +1,15 @@
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import CustomRouter from './CustomRouter';
+import { GlobalStyle } from './assets/GlobalStyle';
 
 const elem = document.getElementById('root');
 if (!elem) throw new Error("root element is not exist");
 const root = ReactDOM.createRoot(elem);
 
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        {/* <Route path="auth" element={} /> */}
-      </Route>
-    </Routes>
-  </BrowserRouter>
+  <React.StrictMode>
+      <GlobalStyle />
+      <CustomRouter />
+  </React.StrictMode>
 );
