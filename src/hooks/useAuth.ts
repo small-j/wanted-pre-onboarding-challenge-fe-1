@@ -12,7 +12,6 @@ function useAuth() {
   const authSignUp = async (email: string, password: string) => {
     const res = await signUp({ email, password });
     if (res?.token) {
-      console.log("????");
       localStorage.setItem("token", res.token);
       navigate("/");
     }
