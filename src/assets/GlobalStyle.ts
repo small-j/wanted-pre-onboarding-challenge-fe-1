@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
         max-width: 100%;
         max-height: 100%;
+        font-size: 62.5%;
     }
     a {
     color: inherit;

@@ -1,13 +1,14 @@
 import { ThemeConsumer } from "styled-components";
 
 const colors = {
-  mainColor: "#70000FE",
+  mainColor: "#7000FE",
   subColor: "#F6F0FF",
   textColor: "#9F9F9F",
   bgGray: "#E6E6E6",
   bgGraySub: "#FBFBFB",
   black: "#000000",
   white: "#FFFFFF",
+  warning: "#DF0303",
 };
 
 const common = {
